@@ -14,6 +14,19 @@ https://github.com/mavroudisv/plain-academic
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<style>
+  .round-headshot {
+    width: 180px;              /* Control the displayed size */
+    aspect-ratio: 1/1;         /* Always a perfect circle */
+    border-radius: 50%;        /* Makes it round */
+    object-fit: cover;         /* Crops to fill the circle */
+    border: 3px solid #eee;    /* Optional: subtle border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Optional: soft shadow */
+    display: block;            /* Removes tiny gap below image */
+    margin: 0 auto 15px auto;  /* Centers and adds bottom space */
+    background: #fff;          /* Fallback background if image has transparency */
+  }
+</style>
 </head>
 
 
@@ -28,7 +41,7 @@ https://github.com/mavroudisv/plain-academic
 <!-- Contact Info on the Sidebar -->
 <div class="col-md-4">
 <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">Anqi Chen</div>
-<p><img class="img-responsive" src="images/my_headshot.JPG" alt="photo" width="180"><br>
+<p><img class="img-responsive round-headshot" src="images/my_headshot.JPG" alt="photo" width="180"><br>
 Postdoctoral Researcher<br>
 Center for Insurance Policy and Research<br>
 National Association of Insurance Commissioners<br>
