@@ -16,15 +16,23 @@ https://github.com/mavroudisv/plain-academic
 <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 <style>
   .round-headshot {
-    width: 180px;              /* Control the displayed size */
-    aspect-ratio: 1/1;         /* Always a perfect circle */
-    border-radius: 50%;        /* Makes it round */
-    object-fit: cover;         /* Crops to fill the circle */
-    border: 3px solid #eee;    /* Optional: subtle border */
+    width: 180px;               /* Control size: adjust as needed */
+    aspect-ratio: 1/1;          /* Keep it perfectly round */
+    border-radius: 50%;         /* Make it a circle */
+    object-fit: cover;          /* Crop to fill circle */
+    object-position: top;       /* Adjust to show more of top (show your face) */
+    border: 3px solid #eee;     /* Optional: subtle border */
     box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Optional: soft shadow */
-    display: block;            /* Removes tiny gap below image */
-    margin: 0 auto 15px auto;  /* Centers and adds bottom space */
-    background: #fff;          /* Fallback background if image has transparency */
+    display: block;
+    margin-bottom: 15px;        /* Space below image */
+    background: #fff;
+  }
+  /* Optional: Remove Bootstrap column padding on the sidebar to make image flush left */
+  @media (min-width: 992px) {
+    .col-md-4 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 </style>
 </head>
